@@ -5,7 +5,7 @@
   --clr-blue-400: hsl(236, 21%, 26%);
   --clr-blue-500: hsl(235, 16%, 14%);
   --clr-blue-600: hsl(234, 17%, 12%);
-  --fs-400: 0.875rem;
+  --fs-400: 1rem;
   --fw-700: 700;
 }
 
@@ -78,7 +78,7 @@ h6 {
 
 .uppercase_space {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 
 .flex {

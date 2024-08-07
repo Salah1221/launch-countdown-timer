@@ -5,15 +5,15 @@ import FlipCounter from "./FlipCounter";
 function App() {
   const [currentTime, setCurrentTime] = useState({
     days: 8,
-    hours: 23,
-    minutes: 55,
-    seconds: 41,
+    hours: 0,
+    minutes: 0,
+    seconds: 1,
   });
   const [nextTime, setNextTime] = useState({
-    days: 7,
-    hours: 22,
-    minutes: 54,
-    seconds: 40,
+    days: 8,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   });
   const [isFlipped, setIsFlipped] = useState({
     days: false,
@@ -66,11 +66,17 @@ function App() {
   }, []);
 
   useEffect(() => {
-    let [time, flip] = decrementTimer(
+    let [time] = decrementTimer(
       nextTime.days,
       nextTime.hours,
       nextTime.minutes,
       nextTime.seconds
+    );
+    let [, flip] = decrementTimer(
+      currentTime.days,
+      currentTime.hours,
+      currentTime.minutes,
+      currentTime.seconds
     );
     setIsFlipped(flip);
     setTimeout(() => {
