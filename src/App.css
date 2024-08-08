@@ -60,6 +60,14 @@ h1 {
   margin-bottom: clamp(3rem, 4.722vw, 4.5rem); /* 4.25rem */
 }
 
+.social-links path {
+  transition: fill 0.3s;
+}
+
+.social-links a:hover path {
+  fill: var(--clr-red);
+}
+
 @font-face {
   font-family: "RedHat";
   src: url("./fonts/RedHatText-Bold.ttf") format("truetype");
