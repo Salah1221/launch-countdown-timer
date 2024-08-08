@@ -69,16 +69,17 @@ h6 {
 #root {
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   min-height: 100dvh;
-  gap: 2rem;
+  gap: 7rem;
+  position: relative;
 }
 
 /* Utility classes */
 
 .uppercase_space {
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 0.556vw;
 }
 
 .flex {
@@ -88,7 +89,7 @@ h6 {
 }
 
 .grid {
-  --gap: 1rem;
+  --gap: 2.22vw;
   display: grid;
   gap: var(--gap);
 }

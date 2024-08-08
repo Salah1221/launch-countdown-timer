@@ -18,8 +18,34 @@ body {
   color: var(--clr-blue-300);
 }
 
+#root {
+  overflow-x: clip;
+}
+
 h1 {
   color: var(--clr-white);
+  text-align: center;
+  align-self: end;
+  font-size: clamp(1rem, 1.667vw, 2rem);
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+}
+
+.hills {
+  bottom: 0;
+  right: 0;
+}
+
+.stars,
+.hills {
+  min-width: 1440px;
+}
+
+.time-unit {
+  font-size: clamp(0.25rem, 0.972vw, 1rem);
 }
 
 @font-face {
