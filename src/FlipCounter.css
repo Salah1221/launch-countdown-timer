@@ -13,15 +13,21 @@
 }
 
 .container {
-  font-size: clamp(1.5rem, 6vw, 7rem);
+  font-size: clamp(2.5rem, 6vw, 7rem);
   position: relative;
   width: 11.806vw;
-  min-width: 50px;
+  min-width: 75px;
   aspect-ratio: 170 / 150;
   perspective: 1300px;
   color: var(--clr-red-500);
   background-color: var(--clr-blue-450);
   box-shadow: 0 0.69444444444vw 0 var(--clr-blue-600);
+}
+
+@media (max-width: 400px) {
+  .container {
+    box-shadow: 0 5px 0 var(--clr-blue-600);
+  }
 }
 
 .upper-part,
@@ -143,7 +149,7 @@
 .container::after {
   content: "";
   position: absolute;
-  height: 0.06944444444vw;
+  height: clamp(0.1px, 0.06944444444vw, 1px);
   width: 100%;
   background: var(--clr-blue-500);
   z-index: 99;

@@ -144,7 +144,7 @@ function App() {
         </g>
       </svg>
       <h1 className="uppercase_space">We&rsquo;re launching soon</h1>
-      <div className="timer flex">
+      <div className="timer flex justify-center">
         <div className="unit grid just-items-center">
           <FlipCounter
             current={currentTime.days}

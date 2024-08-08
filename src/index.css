@@ -70,7 +70,7 @@ h6 {
   display: grid;
   justify-content: center;
   align-items: start;
-  min-height: 100dvh;
+  min-height: 100vh;
   gap: 7rem;
   position: relative;
 }
@@ -83,7 +83,7 @@ h6 {
 }
 
 .flex {
-  --gap: 2rem;
+  --gap: 2.22vw;
   display: flex;
   gap: var(--gap);
 }

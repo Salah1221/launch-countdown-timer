@@ -45,7 +45,7 @@ h1 {
 }
 
 .time-unit {
-  font-size: clamp(0.25rem, 0.972vw, 1rem);
+  font-size: clamp(0.5rem, 0.972vw, 1rem);
 }
 
 @font-face {
