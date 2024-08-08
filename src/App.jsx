@@ -151,7 +151,12 @@ function App() {
             next={nextTime.days}
             isFlipped={isFlipped.days}
           />
-          <span className="uppercase_space time-unit">days</span>
+          <span
+            className="uppercase_space time-unit"
+            style={{ "--l-space": "0.556vw" }}
+          >
+            days
+          </span>
         </div>
         <div className="unit grid just-items-center">
           <FlipCounter
@@ -159,7 +164,12 @@ function App() {
             next={nextTime.hours}
             isFlipped={isFlipped.hours}
           />
-          <span className="uppercase_space time-unit">hours</span>
+          <span
+            className="uppercase_space time-unit"
+            style={{ "--l-space": "0.556vw" }}
+          >
+            hours
+          </span>
         </div>
         <div className="unit grid just-items-center">
           <FlipCounter
@@ -167,7 +177,12 @@ function App() {
             next={nextTime.minutes}
             isFlipped={isFlipped.minutes}
           />
-          <span className="uppercase_space time-unit">minutes</span>
+          <span
+            className="uppercase_space time-unit"
+            style={{ "--l-space": "0.556vw" }}
+          >
+            minutes
+          </span>
         </div>
         <div className="unit grid just-items-center">
           <FlipCounter
@@ -175,10 +190,18 @@ function App() {
             next={nextTime.seconds}
             isFlipped={isFlipped.seconds}
           />
-          <span className="uppercase_space time-unit">seconds</span>
+          <span
+            className="uppercase_space time-unit"
+            style={{ "--l-space": "0.556vw" }}
+          >
+            seconds
+          </span>
         </div>
       </div>
-      <div className="social-links flex justify-center">
+      <div
+        className="social-links flex justify-center"
+        style={{ "--gap": "2rem" }}
+      >
         <a href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path

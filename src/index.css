@@ -71,15 +71,16 @@ h6 {
   justify-content: center;
   align-items: start;
   min-height: 100vh;
-  gap: 7rem;
+  gap: clamp(4rem, 7.778vw, 7rem);
   position: relative;
 }
 
 /* Utility classes */
 
 .uppercase_space {
+  --l-space: clamp(6px, 0.556vw, 8px);
   text-transform: uppercase;
-  letter-spacing: 0.556vw;
+  letter-spacing: var(--l-space);
 }
 
 .flex {
