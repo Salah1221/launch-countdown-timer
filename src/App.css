@@ -37,11 +37,16 @@ h1 {
 .hills {
   bottom: 0;
   right: 0;
+  height: clamp(197px, 13.681vw, 100vh);
 }
 
 .stars,
 .hills {
   min-width: 1440px;
+}
+
+.stars {
+  height: clamp(569px, 39.514vw, 100vh);
 }
 
 .time-unit {
