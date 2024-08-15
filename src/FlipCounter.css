@@ -104,19 +104,19 @@
 }
 
 .container {
-  border-radius: 0.69444444444vw;
+  border-radius: 0.694vw;
 }
 
 .upper-part,
 .upper-part .front {
-  border-top-right-radius: 0.69444444444vw;
-  border-top-left-radius: 0.69444444444vw;
+  border-top-right-radius: 0.694vw;
+  border-top-left-radius: 0.694vw;
 }
 
 .lower-part,
 .upper-part .back {
-  border-bottom-right-radius: 0.69444444444vw;
-  border-bottom-left-radius: 0.69444444444vw;
+  border-bottom-right-radius: 0.694vw;
+  border-bottom-left-radius: 0.694vw;
 }
 
 .container::before {
@@ -124,7 +124,7 @@
   position: absolute;
   inset: 0;
   background: var(--clr-black);
-  border-radius: 0.69444444444vw;
+  border-radius: 0.694vw;
   transition: background 0.25s;
 }
 
@@ -135,8 +135,8 @@
 .back::before {
   content: "";
   position: absolute;
-  border-bottom-right-radius: 0.69444444444vw;
-  border-bottom-left-radius: 0.69444444444vw;
+  border-bottom-right-radius: 0.694vw;
+  border-bottom-left-radius: 0.694vw;
   inset: 0;
   background: var(--clr-white);
   transition: background 0.4s;
@@ -149,7 +149,7 @@
 .container::after {
   content: "";
   position: absolute;
-  height: clamp(0.1px, 0.06944444444vw, 1px);
+  height: clamp(0.1px, 0.0694vw, 1px);
   width: 100%;
   background: var(--clr-blue-500);
   z-index: 99;
@@ -159,25 +159,26 @@
 }
 
 .circle {
+  --outside: var(--clr-blue-500);
   content: "";
   position: absolute;
   border-radius: 50%;
-  border: 0.52083333333vw solid;
-  border-color: var(--clr-blue-600) var(--clr-blue-600) var(--clr-blue-500)
-    var(--clr-blue-500);
+  border: 0.52083vw solid;
+  border-color: var(--clr-blue-600) var(--clr-blue-600) var(--outside)
+    var(--outside);
   z-index: 99;
 }
 
 .circle.left {
-  left: -0.52083333333vw;
+  left: -0.52083vw;
   top: 50%;
   rotate: 45deg;
-  transform: translate(-0.27777777778vw, -0.34722222222vw);
+  transform: translate(-0.2777vw, -0.3472vw);
 }
 
 .circle.right {
   rotate: -135deg;
   right: 0;
   top: 50%;
-  transform: translate(-0.03472222222vw, 0.65972222222vw);
+  transform: translate(-0.03472vw, 0.65972vw);
 }

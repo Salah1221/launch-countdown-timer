@@ -5,6 +5,7 @@
   --clr-blue-400: hsl(236, 21%, 26%);
   --clr-blue-500: hsl(235, 16%, 14%);
   --clr-blue-600: hsl(234, 17%, 12%);
+  --clr-purple: hsl(264, 21%, 14%);
   --fs-400: 0.875rem;
   --fw-700: 700;
 }
@@ -15,7 +16,13 @@ body {
     sans-serif;
   font-size: var(--fs-400);
   background-color: var(--clr-blue-500);
+  background-image: linear-gradient(
+    to top,
+    var(--clr-purple),
+    var(--clr-blue-500)
+  );
   color: var(--clr-blue-300);
+  transition: --clr-purple 0.3s;
 }
 
 #root {
@@ -57,7 +64,7 @@ h1 {
 
 .social-links {
   align-self: end;
-  margin-bottom: clamp(3rem, 4.722vw, 4.5rem); /* 4.25rem */
+  margin-bottom: clamp(3rem, 4.722vw, 4.5rem);
 }
 
 .social-links path {
